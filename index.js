@@ -71,3 +71,9 @@ break;
 }
 
 });
+
+bot.on("message", (msg) => {
+  if (msg.document) {
+    console.log(msg.document.file_id);
+  }
+});
